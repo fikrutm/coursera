@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <style>
+        body {
+            background-color: gray;
+        }
+        /*cant be inherited select every element
+         and apply this property :applied to all page*/
+        
+        * {
+            box-sizing: border-box;
+            /*reset browser default*/
+            margin: 0;
+            padding: 0;
+        }
+        
+        #box {
+            background-color: blue;
+            padding: 10px;
+            border: 5px solid black;
+            margin: 40px;
+            width: 300px;
+            height: 50px; /*spill overflow: */
+            overflow:auto;
+            margin-top: 50px;
+            /*dont affect because h1 is 30px*/
+        }
+        
+        #content {
+            background-color: #90EE90;
+        }
+        
+        h1 {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Box Model</h1>
+    <div id="box">
+        <div id="content"> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </div>
+    </div>
+</body>
+
+</html>
